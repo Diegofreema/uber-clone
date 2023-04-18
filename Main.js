@@ -7,6 +7,7 @@ import { StatusBar } from 'expo-status-bar';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Destination from './screens/Destination';
+import Result from './screens/Result';
 const Stack = createNativeStackNavigator();
 const Main = () => {
   return (
@@ -20,6 +21,11 @@ const Main = () => {
         <Stack.Screen
           name="Destination"
           component={Destination}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Result"
+          component={Result}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>

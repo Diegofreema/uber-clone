@@ -8,7 +8,7 @@ import HomeMap from '../components/HomeMap';
 
 const HomeScreen = () => {
   return (
-    <Box>
+    <Box flex={1}>
       <HomeMap />
       <CovidMessage />
       <HomeSearch />
